@@ -1,0 +1,117 @@
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
+.intro {
+  background-image: url("../assets/iage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  height: 80vh;
+  width: 80%;
+}
+
+.contacts {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.photos {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    
+    grid-template-areas:
+        "progress progress ntf"
+        "lessons projects ntf"
+        "msg msg records"
+}
+
+.photos img {
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  object-fit: cover;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+@media (max-width: 350px) {
+  .wrapper {
+    gap: 2px;
+  }
+
+  .intro {
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: 80px;
+   height: 20vh;
+   width: 100%;
+  }
+
+  .contacts {
+    font-size: 16px;
+  }
+
+
+  .about {
+    /* gap: 10px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .photos img {
+    display: grid;
+    object-fit: cover;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .section {
+    padding: 12px;
+    gap: 10px;
+    font-size: 10px;
+  }
+
+}
+
+
+
+/* @media (max-width: 625px) {
+  .photos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    gap: 0px !important ;
+  }
+  .footerCol {
+    font-size: 15px;
+    text-transform: lowercase;
+  }
+} */
